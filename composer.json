@@ -1,0 +1,81 @@
+{
+    "name": "rahatulrabbi/talkbridge",
+    "description": "A professional real-time chat package for Laravel with private and group conversations, message reactions, file attachments, message status tracking, and WebSocket support.",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "chat",
+        "real-time",
+        "websocket",
+        "reverb",
+        "pusher",
+        "messaging",
+        "group-chat",
+        "reactions",
+        "broadcast",
+        "talkbridge"
+    ],
+    "homepage": "https://github.com/learnwithfair/talkbridge",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "MD. RAHATUL RABBI",
+            "email": "rahatul.ice.09.pust@gmail.com",
+            "homepage": "https://github.com/learnwithfair",
+            "role": "Software Engineer"
+        }
+    ],
+    "require": {
+        "php": "^8.2 || ^8.3 || ^8.4 || ^8.5",
+        "laravel/framework": "^11.0|^12.0|^13.0",
+        "laravel/sanctum": "^4.0|^5.0"
+    },
+    "suggest": {
+        "laravel/reverb": "Required for real-time WebSocket broadcasting via Reverb driver.",
+        "pusher/pusher-php-server": "Required if using Pusher as broadcast driver.",
+        "kreait/laravel-firebase": "Required for FCM mobile push notifications.",
+        "minishlink/web-push": "Required for browser web push notifications."
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0",
+        "pestphp/pest": "^2.0",
+        "pestphp/pest-plugin-laravel": "^2.0",
+        "mockery/mockery": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "RahatulRabbi\\TalkBridge\\": "src/"
+        },
+        "files": [
+            "src/Helpers/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RahatulRabbi\\TalkBridge\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RahatulRabbi\\TalkBridge\\TalkBridgeServiceProvider"
+            ],
+            "aliases": {
+                "TalkBridge": "RahatulRabbi\\TalkBridge\\Facades\\TalkBridge"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "version": "1.0.0",
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
