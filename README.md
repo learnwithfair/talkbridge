@@ -787,6 +787,12 @@ composer remove rahatulrabbi/talkbridge
 ### API Docx (Postman Collection)
 * [API Documentation](https://documenter.getpostman.com/view/39751280/2sBXVcjroe)
 
+### Resources:
+* [Packagist](https://packagist.org/packages/rahatulrabbi/talkbridge)
+* [Video Guide](https://www.youtube.com/watch?v=fb0TB-QVal0)
+* [Technical Documentation](https://github.com/learnwithfair/talkbridge/tree/main/docs/mobile)
+* [Implement Documentation](https://rahatulrabbi.vercel.app/blog/talkbridge-automated-real-time-chat-system-for-laravel-11-13)
+
 
 ## Changelog
 
